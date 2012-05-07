@@ -1,0 +1,15 @@
+{
+  "paths": [
+    // Path can contain environment variables
+    { "path": "./test-files", "recursive": true }
+  ],
+  "filters": [
+    // Pattern should be a regex that is matched against each file name when it changes
+    // if the regex passes, then the action is executed. Use $0 in the action to refer
+    // to the filename that changed.
+    //
+    // in the example below, if the file test.html changed, then the command "cat test.html"
+    // would be executed.
+    { "pattern": "\\.html$", "action": ["cat", "$0"] }
+  ]
+}

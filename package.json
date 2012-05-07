@@ -1,0 +1,10 @@
+{
+  "name":        "WatchIt",
+  "version":     "0.0.1",
+  "description": "Simple, configurable file watcher",
+  "author":      "Seth McLaughlin",
+  "dependencies": {
+    "nodewatch":          ">= 0.0.1"
+  },
+  "engine":      "node >= 0.4.0"
+}
